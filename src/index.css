@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply w-full rounded-xl px-5 py-2 hover:bg-primary-500 transition-colors duration-300 delay-0 bg-primary-700 text-white
+  }
+  .my-form-control {
+    @apply  outline-none w-full mt-2 rounded-lg border border-gray-400 border-opacity-50 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 text-sm text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out
+  }
+
+}
