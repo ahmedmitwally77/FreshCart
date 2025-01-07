@@ -35,15 +35,15 @@ useEffect(() => {
       </div>
       </div>
     ):(
-      <div className="flex items-center justify-center w-3/4 mx-auto flex-col md:flex-row gap-1">
+      <div className="flex items-center justify-center w-3/4 mx-auto flex-col lg:flex-row gap-1">
 
-          <div className="flex justify-center text-center w-full md:w-1/2 items-center flex-col    ">
+          <div className="flex justify-center text-center w-full lg:w-1/2 items-center flex-col    ">
 
           <h1 className="text-xl font-bold text-gray-600">Your Wishlist Is Empty, Start Shopping Now by Clicking the button below and find something you love! ❤</h1>
           <Link to="/" className="btn w-fit font-medium txet-lg  block bg-primary-500 hover:bg-primary-600 mt-5"><i className="fa-solid fa-bag-shopping me-2"></i>Start Shopping</Link>
           </div>
 
-          <div className="image w-full md:w-1/2">
+          <div className="image w-full lg:w-1/2 lg:mt-0 -mt-8">
             <AnimatedSVG animationData={animationData} />
           </div>
 

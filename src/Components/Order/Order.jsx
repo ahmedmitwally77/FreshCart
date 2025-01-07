@@ -38,7 +38,7 @@ export default function Order({ myorder }) {
             className="w-1/2 md:w-1/3 lg:w-1/5 p-2 overflow-hidden "
           >
             <div className="border border-gray-300 rounded-lg border-opacity-50">
-              <img src={item.product.imageCover} alt="" />
+              <img loading="lazy" src={item.product.imageCover} alt="" />
               <div className="text p-3">
                 <h3 className="text-lg font-bold text-black line-clamp-1 my-2">
                   <Link to={`/product/${item.product._id}`}>{item.product.title}</Link>

@@ -172,7 +172,7 @@ async function getAllProducts() {
               <h4 className="text-gray-600 text-lg font-semibold">
                 Brand: {product.brand.name}
               </h4>
-              <img src={product.brand.image} className="md:w-28 w-16" alt=" " />
+              <img src={product.brand.image} loading="lazy"  className="md:w-28 w-16" alt=" " />
             </div>
             <button
               className="btn w-full mt-2"

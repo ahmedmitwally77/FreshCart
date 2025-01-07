@@ -68,6 +68,7 @@ export default function CategorySlider() {
         {data.data.data.map((category) => ( <div key={category._id} >
             <div className="category-item cursor-grab">
               <img
+              loading="lazy"
                 src={category.image}
                 alt={category.name}
                 className="w-full h-[200px] object-cover"

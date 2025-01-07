@@ -18,7 +18,7 @@ export default function ProductCard({ productItem }) {
     <div className="card relative pb-10 rounded-lg overflow-hidden col-span-6 sm:col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2 group/card">
       <div className="content">
         <div className="image relative">
-          <img src={imageCover} className="w-full" alt={title} />
+          <img src={imageCover} loading="lazy" className="w-full" alt={title} />
 
           <div className="layer bg-gray-300 bg-opacity-50 flex justify-center items-center w-full h-full absolute top-0 left-0  opacity-0 group-hover/card:opacity-100 group-hover/card:translate-y-0 transition-all duration-700">
 

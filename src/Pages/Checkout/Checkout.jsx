@@ -7,6 +7,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import AnimatedSVG from "../../Components/svgComp/AnimatedSVG";
+import animationData from '../../assets/images/Online Delivery Service.json';
 
 export default function Checkout() {
   const [order, setOrder] = useState("cash");
@@ -113,10 +115,12 @@ export default function Checkout() {
         <title>Checkout</title>
         <meta name="description" content="Checkout" />
       </Helmet>
-      <h1 className="text-3xl mb-3 text-center font-bold text-primary-500">
+      <h1 className="text-3xl text-center font-bold text-primary-500">
         Shipping Address
       </h1>
-      <form action="" onSubmit={formik.handleSubmit}>
+
+    <div className="flex mx-auto justify-center items-center gap-4 flex-col lg:flex-row">
+    <form action="" onSubmit={formik.handleSubmit} className="w-full lg:w-1/2">
         <div className="input-city mt-2">
           <label htmlFor="email" className="block text-gray-600">
             City :
@@ -197,6 +201,14 @@ export default function Checkout() {
         </button>
         
       </form>
+
+      <div className="image w-full lg:w-1/2 lg:mt-0 -mt-20">
+        <AnimatedSVG animationData={animationData} />
+      </div>
+
+    </div>
+
+      
     </section>
   );
 }

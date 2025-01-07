@@ -11,6 +11,7 @@ export default function CartItem({productInfo}) {
       <div className="content flex gap-6 items-center justify-center sm:justify-start grow">
         <Link to={`/product/${id}`}><img
           src={imageCover}
+          loading="lazy"
           alt=""
           className="sm:w-36 sm:h-36 w-24 h-24 object-cover  rounded-lg"
         /></Link>

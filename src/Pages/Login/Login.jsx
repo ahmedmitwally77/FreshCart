@@ -81,6 +81,7 @@ export default function Login() {
         </h1>
 
         <div className="flex md:w-5/6 mx-auto justify-center items-center gap-8 flex-col md:flex-row">
+        
         <div className="image md:w-1/2">
           <AnimatedSVG animationData={animationData} />
         </div>

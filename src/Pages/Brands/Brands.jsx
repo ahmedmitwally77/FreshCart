@@ -38,7 +38,7 @@ export default function Brands() {
         {data.data.data.map((brand) => (
           <div key={brand._id} className="col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-2">
             <div className="content group/app transition-all overflow-hidden duration-500 w-full relative p-2 border-4 border-gray-300 rounded-lg  " >
-              <img src={brand.image} alt={brand.name} className="w-full h-[100px] object-cover" />
+              <img  loading='lazy' src={brand.image} alt={brand.name} className="w-full h-[100px] object-cover" />
               <div className="layer bg-gray-300 bg-opacity-50 flex justify-center items-center w-full h-full absolute top-0 left-0 translate-y-4   opacity-0 group-hover/app:opacity-100 group-hover/app:translate-y-0 transition-all duration-700">
                 <Link to={`/brands/${brand._id}`} className="btn w-fit font-medium text-lg  block mt-5">Show</Link>
               </div>

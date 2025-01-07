@@ -24,9 +24,9 @@ export default function Cart() {
           <Loading />
         </div>
       ) : cartData.numOfCartItems === 0 ? (
-        <div className="flex w-3/4 mx-auto items-center justify-start flex-col md:flex-row">
+        <div className="flex w-3/4 mx-auto items-center justify-start flex-col lg:flex-row">
 
-<div className="w-full md:w-1/2 rounded-lg flex justify-center mx-auto items-center p-8 text-center flex-col ">
+<div className="w-full lg:w-1/2 rounded-lg flex justify-center mx-auto items-center p-8 text-center flex-col ">
           <h1 className="text-xl font-bold text-gray-600">
             Oops! Your Cart Is Empty, Start Shopping Now by Clicking the button
             below and find something you love! ❤
@@ -39,7 +39,7 @@ export default function Cart() {
           </Link>
         </div>
 
-        <div className="image w-full md:w-1/2">
+        <div className="image w-full lg:w-1/2 lg:mt-0 -mt-5">
           <AnimatedSVG animationData={animationData} />
         </div>
 

@@ -49,6 +49,7 @@ export default function CategoryDetails() {
     <section id="category-details py-12">
       <Helmet>
         <title>{products?.length===0 ? "No Products" : `${title} Products`}</title>
+        <meta name="description" content={`${title} Products`} />
       </Helmet>
       {products ? products.length===0 ?<div className="flex justify-center items-center py-24   ">
         <div className="not-found-categories md:w-1/2 w-full mx-auto bg-gray-200 rounded-lg shadow-md flex justify-center items-center p-8 text-center flex-col ">

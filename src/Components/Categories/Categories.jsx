@@ -37,7 +37,7 @@ export default function Categories() {
         {data.data.data.map((category) => (
           <div key={category._id} className="md:w-1/4 w-1/2 lg:w-1/5 xl:w-1/6 p-3">
             <div className="content group/app transition-all duration-500 w-full relative p-2 border-4 border-gray-300 rounded-lg  ">
-              <img src={category.image} alt={category.name} className="w-full h-[250px] object-cover" />
+              <img src={category.image} loading="lazy" alt={category.name} className="w-full h-[250px] object-cover" />
               <h3 className="text-lg font-semibold text-gray-800 mt-2">{category.name}</h3>
               <div className="layer  transition-all opacity-0 duration-500 group-hover/app:opacity-100 group-hover/app:translate-y-0 flex  justify-center items-center w-full h-full absolute left-0 bottom-0 bg-gray-300 bg-opacity-50">
                 <Link to={`/categories/${category._id}`} className="btn bg-primary-400 rounded-md w-fit duration-300 transition-colors  hover:bg-primary-500">
