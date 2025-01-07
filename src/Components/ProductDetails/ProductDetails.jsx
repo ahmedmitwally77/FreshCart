@@ -70,7 +70,8 @@ async function getAllProducts() {
     infinite: true,
     speed: 300,
     slidesToShow: 6,
-    slidesToScroll: 2,
+    swipeToSlide: true,
+    // slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
@@ -203,7 +204,7 @@ async function getAllProducts() {
           <div className="slider-related">
             <Slider {...settings}>
               {realtedProduct.map((product) => (
-                <div className="px-1 product-realted" key={product._id}>
+                <div className="px-1 cursor-grab product-realted" key={product._id}>
                   <ProductCard productItem={product} />
                 </div>
               ))}
@@ -224,7 +225,7 @@ async function getAllProducts() {
           <div className="slider-all">
             <Slider {...settings}>
               {data.data.data.map((product) => (
-                <div className="px-1 product-realted" key={product._id}>
+                <div className="px-1 cursor-grab product-realted" key={product._id}>
                   <ProductCard key={product._id} productItem={product} />
                 </div>
               ))}

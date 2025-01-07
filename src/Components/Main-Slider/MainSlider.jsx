@@ -1,9 +1,7 @@
 import Slider from "react-slick";
-
 import slider1 from "../../assets/images/slider-image-3.jpeg";
 import slider2 from "../../assets/images/slider-image-2.jpeg";
 import slider3 from "../../assets/images/slider-image-1.jpeg";
-import slider4 from "../../assets/images/slider-images-4.jpeg";
 import CategoryBox from "../CategoryBox/CategoryBox";
 
 export default function MainSlider() {
@@ -11,7 +9,9 @@ export default function MainSlider() {
     dots: true,
     fade: true,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <div>hi</div>,

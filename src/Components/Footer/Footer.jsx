@@ -15,7 +15,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="md:py-16 py-6 px-2  bg-slate-100">
+      <footer className="md:py-12 py-6 px-2  bg-slate-100">
         <div className="container"> 
           <h2 className="text-2xl font-semibold mb-3">Get The FreshCart app</h2>
           <p className="mb-2 text-sm text-gray-500">
@@ -49,6 +49,8 @@ export default function Footer() {
               <img src={apple} alt="" className="md:w-16 w-12 block" />
             </div>
           </div>
+
+          <span className="text-sm block pt-5">&copy; 2025 FreshCart All Rights Reserved By <span className="font-semibold text-lg text-primary-500">Ahmed Mitwally <a target="_blank" href="https://github.com/ahmedmitwally77"><i className="fa-brands text-black text-lg fa-github"></i></a></span></span>
         </div>
       </footer>
     </>

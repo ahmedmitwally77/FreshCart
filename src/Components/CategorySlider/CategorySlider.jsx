@@ -29,7 +29,8 @@ export default function CategorySlider() {
     infinite: true,
     speed: 500,
     slidesToShow: 7,
-    slidesToScroll: 2,
+    swipeToSlide: true,
+    // slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
