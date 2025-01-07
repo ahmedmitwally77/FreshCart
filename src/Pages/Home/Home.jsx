@@ -2,6 +2,8 @@ import MainSlider from "../../Components/Main-Slider/MainSlider";
 import CategorySlider from "../../Components/CategorySlider/CategorySlider";
 import RecentProducts from "../../Components/RecentProducts/RecentProducts";
 import { Helmet } from "react-helmet";
+import { Footer } from "flowbite-react";
+import Footerhome from "../../Components/Footerhome/Footerhome";
 
 export default function Home() {
 
@@ -16,6 +18,7 @@ export default function Home() {
       <MainSlider />
       <CategorySlider />
       <RecentProducts />
+      <Footerhome />
       
     </>
   );
